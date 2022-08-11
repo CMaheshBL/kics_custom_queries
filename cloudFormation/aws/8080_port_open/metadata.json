@@ -1,0 +1,11 @@
+{
+  "id": "d7b890c4-2c0e-4c61-bad7-7e1c144efb15",
+  "queryName": "HTTP Port 8080 Open To Internet",
+  "severity": "HIGH",
+  "category": "Networking and Firewall",
+  "descriptionText": "The HTTP port 8080 is open to the internet in a Security Group",
+  "descriptionUrl": "https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-security-group.html",
+  "platform": "CloudFormation",
+  "descriptionID": "d7b890c4",
+  "cloudProvider": "aws"
+}

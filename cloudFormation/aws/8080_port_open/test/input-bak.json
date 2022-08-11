@@ -1,0 +1,96 @@
+{
+	"document": [
+		{
+			"Resources": {
+				"InstanceSecurityGroup": {
+					"Properties": {
+						"GroupDescription": "Allow http 8080 to client host",
+						"SecurityGroupIngress": [
+							{
+								"CidrIp": "192.168.0.0/16",
+								"FromPort": 8080,
+								"IpProtocol": "tcp",
+								"ToPort": 8080
+							}
+						],
+						"VpcId": {
+							"Ref": "myVPC"
+						}
+					},
+					"Type": "AWS::EC2::SecurityGroup"
+				}
+			},
+			"id": "110cefef-334e-4c30-bf0b-567a3ebc1845",
+			"file": "C:/Chandra/kics/assets/queries/cloudFormation/aws/8080_port_open/test/negative1.yaml"
+		},
+		{
+			"file": "C:/Chandra/kics/assets/queries/cloudFormation/aws/8080_port_open/test/negative2.json",
+			"Resources": {
+				"InstanceSecurityGroup": {
+					"Properties": {
+						"GroupDescription": "Allow http 8080 to client host",
+						"SecurityGroupIngress": [
+							{
+								"CidrIp": "192.168.0.0/16",
+								"FromPort": 8080,
+								"IpProtocol": "tcp",
+								"ToPort": 8080
+							}
+						],
+						"VpcId": {
+							"Ref": "myVPC"
+						}
+					},
+					"Type": "AWS::EC2::SecurityGroup"
+				}
+			},
+			"id": "53d9cc5e-913a-480f-9b93-7adb2bb4c9e4"
+		},
+		{
+			"Resources": {
+				"InstanceSecurityGroup": {
+					"Properties": {
+						"GroupDescription": "Allow http 8080 to client host",
+						"SecurityGroupIngress": [
+							{
+								"CidrIp": "0.0.0.0/0",
+								"FromPort": 8080,
+								"IpProtocol": "tcp",
+								"ToPort": 8080
+							}
+						],
+						"VpcId": {
+							"Ref": "myVPC"
+						}
+					},
+					"Type": "AWS::EC2::SecurityGroup"
+				}
+			},
+			"id": "8f278af8-10be-418e-93e1-4a1da5c5af73",
+			"file": "C:/Chandra/kics/assets/queries/cloudFormation/aws/8080_port_open/test/positive1.yaml"
+		},
+		{
+			"Resources": {
+				"InstanceSecurityGroup": {
+					"Properties": {
+						"GroupDescription": "Allow http 8080 to client host",
+						"SecurityGroupIngress": [
+							{
+								"CidrIp": "0.0.0.0/0",
+								"FromPort": 8080,
+								"IpProtocol": "tcp",
+								"ToPort": 8080
+							}
+						],
+						"VpcId": {
+							"Ref": "myVPC"
+						}
+					},
+					"Type": "AWS::EC2::SecurityGroup"
+				}
+			},
+			"id": "260d84d6-4f68-4bc4-89cc-e9ffa211a9bb",
+			"file": "C:/Chandra/kics/assets/queries/cloudFormation/aws/8080_port_open/test/positive2.json"
+		}
+	]
+}
